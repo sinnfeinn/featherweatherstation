@@ -6,6 +6,7 @@ A weather station with a self-hosted dashboard using:
 - MySQL
 - Chart.js (https://www.chartjs.org/)
 - Bootstrap (https://getbootstrap.com/)
+- Optional external data from https://darksky.net/dev
 
 ![dashboard](https://user-images.githubusercontent.com/936824/75815337-13d55d00-5d48-11ea-805a-effd02a66dc4.png)
 
