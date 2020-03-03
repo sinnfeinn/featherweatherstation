@@ -9,5 +9,5 @@ A weather station with a self-hosted dashboard using:
 
 Credits:
 Rui Santos
-https://github.com/RuiSantosdotme/Cloud-Weather-Station-ESP32-ESP8266/
-https://randomnerdtutorials.com/cloud-weather-station-esp32-esp8266/
+- https://github.com/RuiSantosdotme/Cloud-Weather-Station-ESP32-ESP8266/
+- https://randomnerdtutorials.com/cloud-weather-station-esp32-esp8266/
