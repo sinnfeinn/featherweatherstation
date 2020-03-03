@@ -7,6 +7,9 @@ A weather station with a self-hosted dashboard using:
 - Chart.js (https://www.chartjs.org/)
 - Bootstrap (https://getbootstrap.com/)
 
+![dashboard](https://user-images.githubusercontent.com/936824/75815337-13d55d00-5d48-11ea-805a-effd02a66dc4.png)
+
+
 Credits:
 Rui Santos
 - https://github.com/RuiSantosdotme/Cloud-Weather-Station-ESP32-ESP8266/
