@@ -33,9 +33,10 @@ Website hosted on RaspberryPi apache server receives chart data via paho mqtt an
 
 
 Credits:
-Rui Santos
+
+-- Rui Santos
 - https://github.com/RuiSantosdotme/Cloud-Weather-Station-ESP32-ESP8266/
 - https://randomnerdtutorials.com/cloud-weather-station-esp32-esp8266/
 
-rike.dev
+-- rike.dev
 - https://rike.dev/2019/02/11/hardware-sensors-receiver-raspberry-pi-for-a-basic-tracking-tool-on-temperature-and-humidity/
