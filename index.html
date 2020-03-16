@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Weatherstation</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Dynatable/0.3.1/jquery.dynatable.min.css" integrity="sha256-lxcbK1S14B8LMgrEir2lv2akbdyYwD1FwMhFgh2ihls=" crossorigin="anonymous" />
+  <link rel="stylesheet" type="text/css" href="custom.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/min/moment.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-streaming@1.8.0/dist/chartjs-plugin-streaming.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.min.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Dynatable/0.3.1/jquery.dynatable.min.js" integrity="sha256-/kLSC4kLFkslkJlaTgB7TjurN5TIcmWfMfaXyB6dVh0=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="jumbotron">
+      <h1 class="display-4"><i class="fa fa-rainbow"></i>&nbsp;Weatherstation&nbsp;<i class="fa fa-sun"></i></h1>
+      <p class="lead">Portland, OR</p>
+    </div>
+
+      <div class="row">
+        <div class="col-md">
+          <canvas id="myChart_temperature"></canvas>
+        </div>
+        <div class="col-md">
+          <canvas id="myChart_pressure"></canvas>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md">
+          <canvas id="myChart_humidity"></canvas>
+        </div>
+        <div class="col-md">
+          <canvas id="myChart_co2"></canvas>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md">
+          <canvas id="myChart_tvoc"></canvas>
+        </div>
+        <div class="col-md">
+          <div class="embed-responsive embed-responsive-16by9">
+            <script type='text/javascript'
+              src='https://darksky.net/widget/default/45.5335,-122.6501/uk12/en.js?width=100%&height=320&title=Portland, OR&textColor=ffffff&bgColor=transparent&transparency=true&skyColor=undefined&fontFamily=Default&customFont=&units=uk&htColor=ffffff&ltColor=ffffff&displaySum=yes&displayHeader=yes'>
+            </script>
+          </div>
+        </div>
+      </div>
+
+<div class=".container-lg">
+      <table id="my-final-table">
+        <thead>
+          <th>id</th>
+          <th>room</th>
+          <th>temp</th>
+          <th>hum</th>
+          <th>press</th>
+          <th>co2</th>
+          <th>tvoc</th>
+          <th>time</th>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+  </div>
+</div>
+    <script src="./streaming.js" type="text/javascript"></script>
+    <script src="./table.js" type="text/javascript"></script>
+</body>
+</html>

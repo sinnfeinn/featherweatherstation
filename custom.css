@@ -1,0 +1,47 @@
+.jumbotron {
+    padding: 1rem 3rem;
+    background-color: rgba(42, 43, 42, 1);
+    font-family: 'Roboto', sans-serif;
+}
+
+.display-4 {
+    text-align: center;
+}
+
+body > div > div.jumbotron > p {
+    text-align: center;
+}
+
+.media-body {
+    padding-left: 0em;
+    padding-top: 0em;
+}
+
+html body {
+    background-color: rgba(22, 22, 22, 1);
+}
+
+body > div > div.jumbotron > p, body > div > div.jumbotron > h1 {
+    color: white !important;
+}
+
+body > div > div.\.container-lg > span.dynatable-search > span {
+  color: white;
+  }
+
+body > div > div.\.container-lg > span.dynatable-per-page > span {
+    color: white !important;
+}
+
+.dynatable-search {
+    color: white !important;
+}
+
+th {
+    background: rgba(40, 100, 220, 1) !important;
+}
+
+#my-final-table {
+    background-color: rgba(220, 220, 220, 1);
+    width: 100%;
+}
