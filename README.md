@@ -1,4 +1,5 @@
 # featherweatherstation
+![dashboard](https://user-images.githubusercontent.com/936824/76774954-e33aed80-6761-11ea-8735-f0da5898902e.png)
 A weather station with a Raspberry Pi hosted dashboard using:
 
 Hardware:
@@ -23,7 +24,7 @@ Frontend:
 - Dynatable (https://www.dynatable.com/)
 - Optional external data from https://darksky.net/dev
 
-![dashboard](https://user-images.githubusercontent.com/936824/76774954-e33aed80-6761-11ea-8735-f0da5898902e.png)
+
 
 Setup:
 ESP32 sends CCS811/BME280 sensordata via ArduinoJson and PubSubClient to Raspberry Pi MQTT broker.
